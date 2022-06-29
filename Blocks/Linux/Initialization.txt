@@ -1,0 +1,29 @@
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove
+sudo apt clean
+
+sudo apt install software-properties-common
+sudo apt update
+sudo apt autoremove
+
+cd /media/alaska/VBox_GAs_6.1.32
+./VBoxLinuxAdditions.run
+sudo ./VBoxLinuxAdditions.run
+ls /opt
+sudo usermod -aG vboxsf alaska
+
+cvt 2240 1400 60
+xrandr --newmode "2240x1400_60.00"  264.50  2240 2400 2640 3040  1400 1403 1409 1451 -hsync +vsync
+xrandr --addmode Virtual1 "2240x1400_60.00"
+
+sudo apt install gnome-system-monitor
+sudo apt remove io.elementary.tasks
+sudo apt remove io.elementary.mail
+
+sudo apt clean
+sudo apt autoremove
+
+sudo apt install pantheon-tweaks
+sudo add-apt-repository ppa:philip.scott/pantheon-tweaks
+sudo apt install pantheon-tweaks

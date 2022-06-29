@@ -1,0 +1,17 @@
+#!/bin/bash
+
+PROJ="banker"
+
+read -p "Filename: " NAME
+
+if [ "$NAME" == "$PROJ" ]
+then
+	cd /mnt/c/users/kunal/documents/github/container/practice/c/$NAME
+	gcc $NAME.c -o $NAME -lm
+	./$NAME
+else
+	cd /mnt/c/users/kunal/documents/github/container/practice/c
+	gcc $NAME.c -o $NAME -lm
+	echo
+	./$NAME
+fi
